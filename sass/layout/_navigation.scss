@@ -1,0 +1,55 @@
+.navigation {
+    width: 100%;
+    background-color: white;
+    font-family: $text-font;
+    position: absolute;
+    top: $header-height;
+    left: 0;
+
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height .4s ease;
+     
+    @include media(570) {
+      width: auto;
+      height: auto;
+      max-height: none;
+      transition: none;
+      position: relative;
+      top: 0;
+
+      &__list {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    &.displayed {
+        max-height: 15rem;
+    }
+
+    &__item {
+        border-bottom: 1px solid #000;
+
+        @include media(570) {
+          border-bottom: none;
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: 1em;
+    }
+}
+
+#menu-handler {
+    font-size: 1.8em;
+    padding:  .5em;
+    color: #dbdbdb;
+
+    @include media(570) {
+      display: none;
+    }
+}

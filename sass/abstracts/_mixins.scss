@@ -1,0 +1,16 @@
+/************* MIXINS  ************/
+
+@mixin wrapper($width:90%, $max-width:none) {
+    width: $width;
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+/************* MEDIA-QUERIES  ************/
+@mixin media($width) {
+  @media only screen and (min-width: em($width)) {
+    @content;
+  }
+}

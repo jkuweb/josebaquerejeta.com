@@ -1,0 +1,70 @@
+.card {
+  text-align: center;
+  background-color: #dbdbdb;
+  margin-bottom: 10rem;
+  padding : 2rem 1rem 4rem;
+  font-family: $text-font;
+ 
+  clip-path: polygon(-0.7% 40px, 104.5% 1px, 104.5% 158.57%, -4px 158.78%); 
+  position: relative;
+
+  @include media(750) {
+    display: flex;
+
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+  }
+  
+  &__description {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem 0 2.5rem;
+    line-height: 1.5;
+
+    @include media(750) {
+      padding: 2em;
+    }
+  }
+
+  &__title {
+    font-size: 2em;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  &__subtitle {
+    margin-bottom: 1rem;
+  }
+   
+  &__text {
+    margin-bottom: 5rem;
+    line-height: 1.4em;
+  }
+
+  &__img {
+    height: 100%;
+    position: absolute;
+    top: 70%;
+    left: 4%;
+    right: -4%;
+
+    @include media(750) {
+      flex: 0 0 50%;
+    }
+  }
+
+  @include media(360) {
+    clip-path: none;
+    padding: 0;
+    margin-bottom: 0;
+      &__img {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+  } 
+}
+

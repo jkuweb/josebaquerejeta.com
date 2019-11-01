@@ -1,0 +1,91 @@
+.skills {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill {
+
+    &__header {
+        position: relative;
+    }
+     
+    &__title {
+        background-color: #000c;
+        font-family: $heading-font;
+        color: white;
+        font-size: 1.3em;
+        height: 8rem;
+        padding-top: 3rem;
+        text-align: center;
+    }
+
+    &__icon-box {
+        width: 6rem;
+        height: 6rem;
+        line-height: 6rem;
+        background-color: #dbdbdb;
+        text-align: center;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        transform: translateX(-50%);
+    }
+
+    &__icon {
+        font-size: 2em;
+        display: block;
+        
+        @extend .vertical-center
+    }
+
+    &__info {
+        margin-top: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: $text-font;
+        line-height: 1.4;
+        background-color: #fff;
+        padding: 1em;
+
+        span {
+          display: block;
+          text-align: center;
+          font-size: 2em;
+          border: 1px solid black;
+        }
+        
+        h3 {
+            text-align: center;
+            font-size: 1.3em;
+            padding-top: 1em;
+            padding-bottom: .4em;
+            border-bottom-style: double;
+            border-bottom-width: 15px;
+            border-bottom-color: $app-color;
+        }
+
+        p {
+            margin-top: 2rem;
+        }
+    }
+}
+
+.front-end,
+.back-end {
+    clip-path: circle(45.0% at 50% 100%);
+
+    @include media(380) {
+      clip-path: circle(42.4343% at 50% 100%);
+    }
+    @include media(400) {
+      clip-path: none;
+    }
+}
+
+.back-end {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,13 @@
+/*************** FUNCTIONS ************/
+
+// PX TO REM
+@function rem($size, $base:16) {
+    $remSize: $size / $base;
+    @return #{$remSize}rem;
+  }
+  
+  // PX TO EM
+  @function em($size, $base:16) {
+    $emSize: $size / $base;
+    @return #{$emSize}em;
+  }

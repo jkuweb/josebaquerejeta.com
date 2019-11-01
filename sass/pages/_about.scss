@@ -1,0 +1,21 @@
+.about {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+    background-color: cadetblue; 
+    &__info {
+      margin-top: rem(100);
+      border-style: double;
+      border-width: 15px;
+      border-color: #dbdbdb;
+      padding: 1em;
+    }
+    
+    &__text {
+      color: $text-color-dark;
+      font-family: $text-font;
+      line-height: 1.44;
+      margin-bottom: rem(30);
+    }
+
+}
+

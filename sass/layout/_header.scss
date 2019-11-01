@@ -1,0 +1,19 @@
+.header {
+    height: $header-height; 
+    margin-right: -0.5em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $app-color;
+    z-index: 1;
+    
+}
+
+.header-wrapper {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include wrapper();
+}
+

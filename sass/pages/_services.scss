@@ -1,0 +1,52 @@
+.services {
+  background-color: $text-color; 
+  font-family: $text-font; 
+  padding-top: rem(140);
+  padding-bottom: rem(140);
+
+}
+
+.service {
+  display: flex;
+  margin-bottom: rem(50);
+
+  &__wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include media(670) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  
+  &__icon {
+    font-size: 3em;
+    color: $app-color;
+  }
+  
+  &__info {
+    margin-left: rem(35);
+  }
+
+  &__title {
+    font-size: em(18);
+    color: $app-color;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: rem(15);
+  }
+
+  &__description {
+    line-height: 1.44;
+	font-size: .9em;
+	color: $text-color-dark;
+  }
+
+  @include media(670) {
+    width: 48%;
+  }
+}

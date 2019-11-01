@@ -1,0 +1,28 @@
+.presentation {
+    width: 100%;
+    padding-top: $section-padding + 2rem;
+    margin-bottom: $section-padding;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    
+    &__list {
+        margin: 2rem 0;
+        font-family: $text-font;
+        color: $text-color;
+    }
+
+    &__item:not(:first-child) {
+        margin-top: 2rem;
+    }
+    
+    &__btn {
+      color: #dbdbdb;
+    }
+}
+
+
+
+
