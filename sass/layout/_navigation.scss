@@ -12,7 +12,8 @@
 
     transition: max-height .4s ease;
      
-    @include media(570) {
+    @include media(670) {
+      background-color: $app-color;
       width: auto;
       height: auto;
       max-height: none;
@@ -23,6 +24,10 @@
       &__list {
         display: flex;
         justify-content: space-between;
+
+        @include media(670) {
+          padding: 1em;
+        }
       }
     }
 
@@ -31,16 +36,26 @@
     }
 
     &__item {
-        border-bottom: 1px solid #000;
+        text-align: center;
+        border-bottom: 1px solid #dbdbdb;
 
-        @include media(570) {
+        @include media(670) {
           border-bottom: none;
+          background-color: #fffacd; 
+
+          &:not(:last-child) {
+            margin-right: 1rem;
+          }
         }
     }
 
     &__link {
         display: block;
         padding: 1em;
+
+        @include media(670) {
+          padding: .6em;
+        }
     }
 }
 
@@ -49,7 +64,7 @@
     padding:  .5em;
     color: #dbdbdb;
 
-    @include media(570) {
+    @include media(670) {
       display: none;
     }
 }
