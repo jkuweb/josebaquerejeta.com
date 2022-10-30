@@ -1,0 +1,213 @@
+      
+{% extends 'base.html.twig' %}      
+      {% block content %}
+			<section id="portafolio" class="section-portafolio">
+				<h2 class="heading-secondary mb-h2">Portafolio</h2>
+				<article class="portafolio">
+					<div class="portafolio__left-box">
+						<h3 class="heading-tertiary mb-h3">Viva Donostia / Landing Page </h3>
+						<div class="portafolio__info">
+							<picture>
+								<source srcset="{{ asset('assets/img/captura_de_pantalla_web_vivadonostia_mobile.webp') }}" media="(max-width:700px)" type="image/webp">
+									<source srcset="{{ asset('assets/img/captura_de_pantalla_web_vivadonostia_mobile.jpg') }}" media="(max-width:700px)" type="image/jpg">
+										<source srcset="{{ asset('assets/img/captura_de_pantalla_web_vivadonostia.webp') }}" type="image/webp">
+											<source srcset="{{ asset('assets/img/captura_de_pantalla_web_vivadonostia.jpg') }}" type="image/jpg">
+												<img loading="lazy" class="portafolio__img" width="1500" height="2155" src="{{ asset('img/captura_de_pantalla_web_vivadonostia.jpg') }}" alt="imagen donde se muestra la landing page de la web vivadonostia">
+							</picture>
+						</div>
+					</div>
+					<div class="portafolio__right-box portafolio__right-box--bg-1">
+						<div class="devices">
+							<div class="imac">
+								<div class="display display--p1-mac"></div>
+								<div class="bottom"></div>
+							</div>
+							<div class="ipad">
+								<div class="display display--p1-phone"></div>
+							</div>
+						</div> 
+						<div class="portafolio__link">
+							<a href="https://jkuweb.github.io/web-donostia/" target="_blank" title="Acceder a la página web">Visitar web</a>
+						</div>
+					</div>
+				</article>
+				<article class="portafolio">
+					<div class="portafolio__left-box">
+						<h3 class="heading-tertiary mb-h3">Festivales Donostia / Landing Page </h3>
+						<div class="portafolio__info">
+							<picture class="lazy">
+								<source srcset="{{ asset('assets/img/captura_de_pantalla_web_festivales-donostia_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/captura_de_pantalla_web_festivales-donostia_mobile.webp') }}" media="(max-width:700px)" type="image/webp">
+								<source srcset="{{ asset('assets/img/captura_de_pantalla_web_festivales-donostia_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/captura_de_pantalla_web_festivales-donostia_mobile.jpg') }}" media="(max-width:700px)" type="image/jpg">
+								<source srcset="{{ asset('assets/img/captura_de_pantalla_web_festivales-donostia_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/captura_de_pantalla_web_festivales-donostia.webp') }}" type="image/webp">
+								<source srcset="{{ asset('assets/img/captura_de_pantalla_web_festivales-donostia_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/captura_de_pantalla_web_festivales-donostia.jpg') }}" type="image/jpg">
+								<img loading="lazy" decoding="async" class="portafolio__img" width="1500" height="1641" src="{{ asset('assets/img/captura_de_pantalla_web_festivales-donostia_placeholder.jpg') }}" alt="imagen donde se muestra la primera sección de la web festivales donostia">
+							</picture>
+							<div class="portafolio__link">
+								<a href="https://jkuweb.github.io/festival-donosti/" target="_blank" title="Acceder a la página web">Visitar web</a>
+							</div>
+						</div>
+					</div>
+					<div class="portafolio__right-box portafolio__right-box--bg-2">
+						<div class="devices">
+							<div class="imac">
+								<div class="display display--p2-mac"></div>
+								<div class="bottom"></div>
+							</div>
+							<div class="ipad">
+								<div class="display display--p2-phone"></div>
+							</div>
+						</div>
+						<div class="portafolio__link">
+							<a href="https://jkuweb.github.io/festival-donosti/" target="_blank" title="Acceder a la página web">Visitar web</a>
+						</div>
+					</div>
+				</article>
+				<article class="portafolio">
+					<div class="portafolio__left-box">
+						<h3 class="heading-tertiary mb-h3">Plantilla / Landing Page </h3>
+						<div class="portafolio__info">
+							<picture class="lazy">
+								<source srcset="{{ asset('assets/img/captura_de_pantalla_web_buscador_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/captura_de_pantalla_web_buscador_mobile.webp') }}" media="(max-width:700px)" type="image/webp">
+							  <source srcset="{{ asset('assets/img/captura_de_pantalla_web_buscador_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/captura_de_pantalla_web_buscador_mobile.jpg') }}" media="(max-width:700px)" type="image/jpg">
+								<source srcset="{{ asset('assets/img/captura_de_pantalla_web_buscador_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/captura_de_pantalla_web_buscador.webp') }}" type="image/webp">
+								<source srcset="{{ asset('assets/img/captura_de_pantalla_web_buscador_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/captura_de_pantalla_web_buscador.jpg') }}" type="image/jpg">
+								<img class="portafolio__img" width="1500" height="3159" src="{{ asset('assets/img/captura_de_pantalla_web_buscador_placeholder.jpg') }}" alt="imagen donde se muestra la captura de pantalla de la web">
+							</picture>
+						</div>
+					</div>
+					<div class="portafolio__right-box portafolio__right-box--bg-3">
+						<div class="devices">
+							<div class="imac">
+								<div class="display display--p3-mac"></div>
+								<div class="bottom"></div>
+							</div>
+							<div class="ipad">
+								<div class="display display--p3-phone"></div>
+							</div>
+						</div>
+						<div class="portafolio__link">
+							<a href="https://jkuweb.github.io/web-restaurantes/" target="_blank" title="Acceder a la página web">Visitar web</a>
+						</div>
+					</div>
+				</article>
+				<article class="portafolio">
+					<div class="portafolio__left-box">
+						<h3 class="heading-tertiary mb-h3">Plantilla / Landing Page </h3>
+						<div class="portafolio__info">
+							<picture class="lazy">
+								<source srcset="{{ asset('assets/img/captura_de_pantalla_web_curso_yoga_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/captura_de_pantalla_web_curso_yoga_mobile.webp') }}" media="(max-width:700px)" type="image/webp">
+									<source srcset="{{ asset('assets/img/captura_de_pantalla_web_curso_yoga_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/captura_de_pantalla_web_curso_yoga_mobile.jpg') }}" media="(max-width:700px)" type="image/jpg">
+										<source srcset="{{ asset('assets/img/captura_de_pantalla_web_curso_yoga_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/captura_de_pantalla_web_curso_yoga.webp') }}" type="image/webp">
+											<source srcset="{{ asset('assets/img/captura_de_pantalla_web_curso_yoga_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/captura_de_pantalla_web_curso_yoga.jpg') }}" type="image/jpg">
+												<img class="portafolio__img" width="1500" height="4096" src="{{ asset('assets/img/captura_de_pantalla_web_curso_yoga_placeholder.jpg') }}" alt="imagen donde se muestra la captura de pantalla de la web curso de yoga">
+							</picture>
+						</div>
+					</div>
+					<div class="portafolio__right-box portafolio__right-box--bg-4">
+						<div class="devices">
+							<div class="imac">
+								<div class="display display--p4-mac"></div>
+								<div class="bottom"></div>
+							</div>
+							<div class="ipad">
+								<div class="display display--p4-phone"></div>
+							</div>
+						</div>
+						<div class="portafolio__link">
+							<a href="https://jkuweb.github.io/yoga-fit/" target="_blank" title="Acceder a la página web">Visitar web</a>
+						</div>
+					</div>
+				</article>
+				<article class="portafolio">
+					<h3 class="heading-tertiary mb-h3">CRM / Desarrollo a medida</h3>
+					<div class="imac imac__crm">
+						<div class="display display--p5-mac"></div>
+						<div class="bottom"></div>
+					</div>
+					<div class="portafolio__img-box">
+						<picture class="lazy">
+							<source srcset="{{ asset('assets/img/crm_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/usuario_logear.webp') }}" type="image/webp">
+								<source srcset="{{ asset('assets/img/crm_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/usuario_logear.jpg') }}" type="image/jpg">
+									<img loading="lazy" class="portafolio__img" src="{{ asset('img/crm_placeholder.jpg') }}" width="1920" height="1080" alt="Imagen del panel del crm donde se muestran un formulario para el acceso por usuario y contraseña">
+						</picture>
+						<picture class="lazy">
+							<source srcset="{{ asset('assets/img/crm_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/producto_agregar.webp') }}" type="image/webp">
+								<source srcset="{{ asset('assets/img/crm_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/producto_agregar.jpg') }}" type="image/jpg">
+									<img loading="lazy" src="{{ asset('assets/img/crm_placeholder.jpg') }}" width="1920" height="1080" alt="Imagen del panel del crm donde se muestran un formulario para agregar un nuevo producto">
+						</picture>
+						<picture class="lazy">
+							<source srcset="{{ asset('assets/img/crm_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/producto_ver.webp') }}" type="image/webp">
+								<source srcset="{{ asset('assets/img/crm_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/producto_ver.jpg') }}" type="image/jpg">
+									<img loading="lazy" src="{{ asset('assets/img/crm_placeholder.jpg') }}" width="1920" height="1080" alt="Imagen del panel del crm donde se muestra un panel con los datos asociados a un producto">
+						</picture>
+						<picture class="lazy">
+							<source srcset="{{ asset('assets/img/crm_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/cliente_ver.webp') }}" type="image/webp">
+								<source srcset="{{ asset('assets/img/crm_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/cliente_ver.jpg') }}" type="image/jpg">
+									<img loading="lazy" src="{{ asset('assets/img/crm_placeholder.jpg') }}"  width="1920" height="1080" alt="Imagen del panel del crm donde se muestra un panel con los datos asociados a un cliente">
+						</picture>
+						<picture class="lazy">
+							<source srcset="{{ asset('assets/img/crm_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/producto_editar.webp') }}" type="image/webp">
+								<source srcset="{{ asset('assets/img/crm_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/producto_editar.jpg') }}" type="image/jpg">
+									<img loading="lazy" src="{{ asset('assets/img/crm_placeholder.jpg') }}" width="1920" height="1080" alt="Imagen del panel del crm donde se muestra un formulario para la edición de un producto">
+						</picture>
+						<picture class="lazy">
+							<source srcset="{{ asset('assets/img/crm_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/cliente_listar.webp') }}" type="image/webp">
+								<source srcset="{{ asset('assets/img/crm_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/cliente_listar.jpg') }}" type="image/jpg">
+									<img loading="lazy" src="{{ asset('assets/img/crm_placeholder.jpg') }}" width="1920" height="1080" alt="Imagen del panel del crm donde se muestra una lista de clientes">
+						</picture>
+						<picture class="lazy">
+							<source srcset="{{ asset('assets/img/crm_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/dashboard.webp') }}" type="image/webp">
+								<source srcset="{{ asset('assets/img/crm_placeholder.jpg') }}" data-srcset="{{ asset('assets/img/dashboard.jpg') }}" type="image/jpg">
+									<img loading="lazy" src="{{ asset('assets/img/crm_placeholder.jpg') }}" width="1920" height="1080" alt="Imagen del panel principal del crm donde se muestran diferentes gráficos, ordenes recientes..">
+						</picture>
+					</div>
+				</article>
+			</section>
+			<section id="contact" class="c-contact">
+				<h2 class="heading-secondary mb-h2">Contacto</h2>
+				{% for message in app.flashes('email-success-notice') %}
+					<div class="email-success-notice">
+					<svg viewBox="0 0 132 119" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path opacity=".15" d="m75.906 7.317-68.59 68.59c-9.763 9.763-9.763 25.592 0 35.355 9.763 9.763 25.593 9.763 35.356 0l68.589-68.59c9.763-9.762 9.763-25.591 0-35.355-9.763-9.763-25.592-9.763-35.355 0Z" fill="#00FF70"/><path d="M114.229 41.64v43.92a6.518 6.518 0 0 1-6.51 6.52l-79.66.05a6.52 6.52 0 0 1-6.52-6.55L21.72 42a6.52 6.52 0 0 1 6.48-6.49l79.47-.42a6.516 6.516 0 0 1 4.647 1.906 6.53 6.53 0 0 1 1.913 4.644Z" fill="#fff"/><g opacity=".3" fill="#F5A8A0"><path opacity=".3" d="M74.86 46.967 58.976 63.695l2.175 2.066 15.886-16.729-2.175-2.065ZM75.693 52.851 65.654 63.726l2.205 2.035 10.038-10.875-2.204-2.035Z"/></g><path d="M21.9 87.29h90.9a5.68 5.68 0 0 1-5.68 5.68H27.58a5.68 5.68 0 0 1-5.68-5.68Z" fill="#E2E9F1"/><path d="M77.29 30.75a6.49 6.49 0 1 1 6.49-6.49 6.5 6.5 0 0 1-6.49 6.49Zm0-10a3.49 3.49 0 1 0 3.49 3.49 3.5 3.5 0 0 0-3.49-3.48v-.01ZM66.6 30.02a2.13 2.13 0 1 0 0-4.26 2.13 2.13 0 0 0 0 4.26Z" fill="#00FF70"/><path d="M31.77 99.7a2.13 2.13 0 1 0 0-4.26 2.13 2.13 0 0 0 0 4.26Z" fill="#D5DFEB"/><path d="M42 106.29a5.37 5.37 0 1 1 5.37-5.37 5.38 5.38 0 0 1-5.37 5.37Zm0-7.74a2.37 2.37 0 1 0 0 4.74 2.37 2.37 0 0 0 0-4.74ZM27 93.63a7.998 7.998 0 0 1-8-8.05L19.22 42a8 8 0 0 1 8-8l79.47-.42a8 8 0 0 1 8 8v43.98a8.001 8.001 0 0 1-8 8l-79.67.05-.02.02Zm79.67-57L27.21 37a5 5 0 0 0-5 5L22 85.59a5 5 0 0 0 5 5l79.67-.05a5.002 5.002 0 0 0 5-5v-43.9a5.002 5.002 0 0 0-5-5v-.01Z" fill="#3E6177"/><path d="M66.88 75.64a10.78 10.78 0 0 1-7.67-3.18L33.1 46.36l2.12-2.12 26.11 26.1a7.85 7.85 0 0 0 11.1 0l26.11-26.11 2.12 2.12-26.11 26.11a10.782 10.782 0 0 1-7.67 3.18Z" fill="#3E6177"/><path d="M48.825 59.078 29.51 81.11l2.256 1.978L51.08 61.056l-2.256-1.978ZM84.936 59.066l-2.256 1.977L101.99 83.08l2.256-1.977-19.311-22.036Z" fill="#3E6177"/><path d="M106.891 38.89h-2v10.84h2V38.89ZM106.891 51.28h-2v4.65h2v-4.65ZM106.891 57.47h-2v1.55h2v-1.55Z" fill="#fff"/><path d="M108.32 43.88h-2v12.69h2V43.88ZM108.32 58.38h-2v5.44h2v-5.44ZM108.32 65.63h-2v1.81h2v-1.81Z" fill="#fff"/><path d="M105.619 68.12c14.454 0 26.17-11.717 26.17-26.17 0-14.453-11.716-26.17-26.17-26.17-14.453 0-26.17 11.717-26.17 26.17 0 14.453 11.717 26.17 26.17 26.17Z" fill="#fff"/><path d="M106.531 63.18c11.725 0 21.23-9.505 21.23-21.23s-9.505-21.23-21.23-21.23-21.23 9.505-21.23 21.23 9.505 21.23 21.23 21.23Z" fill="#00FF70"/><path d="M105.621 64.68a22.73 22.73 0 1 1 22.73-22.73 22.761 22.761 0 0 1-22.73 22.73Zm0-42.47a19.73 19.73 0 1 0 19.73 19.73 19.762 19.762 0 0 0-19.73-19.72v-.01Z" fill="#3E6177"/><path d="M103.7 51.43a1.92 1.92 0 0 1-1.1-.35l-7.67-5.37a1.501 1.501 0 0 1 1.72-2.46l6.82 4.75 11.13-14.84A1.51 1.51 0 1 1 117 35l-11.76 15.65a1.923 1.923 0 0 1-1.54.78Z" fill="#fff"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h131.79v118.59H0z"/></clipPath></defs></svg>
+					<p>{{ message }}</p>
+					</div>
+				{% endfor %}
+			<div class="c-contact__container">
+				<p class="c-contact__text"></p>
+				<form action="{{ path('web_inicio') }}" class="c-contact__form c-form" method="POST">
+				{{ form_start(contactForm) }}
+					<div class="c-form__header">
+						<p>Envíame un mensaje</p>
+						<p>(Todos los campos son requeridos)</p>
+					</div>
+					<div class="c-form__col-1">
+						<label class="c-form__label">¿Quíen eres?
+							<span>Nombre, empresa, como debería llamarte</span>
+								{{ form_row(contactForm.name) }}
+								{{ form_errors(contactForm.name) }}
+						</label>
+						<label class="c-form__label">Tu dirección de email
+							<span>Para que pueda volver a contactarte</span>
+								{{ form_row(contactForm.email) }}
+						</label>
+						<label class="c-form__label">¿De qué trata tu solicitud? 
+							<span>Escoja la opción deseada</span>
+						</label>
+								{{ form_row(contactForm.subject) }}
+					</div>
+					<div class="c-form__col-2">
+						<label class="c-form__label" for="message">Tu Mensaje</label>
+								{{ form_row(contactForm.message) }}
+						<button class="c-form__btn c-btn" type="submit">
+							Enviar
+							<svg class="c-form__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 17h4v-3l5 4.5-5 4.5v-3h-4v-3zm7-13H4c-.53043 0-1.03914.21071-1.41421.58579C2.21071 4.96086 2 5.46957 2 6v12c0 .5304.21071 1.0391.58579 1.4142C2.96086 19.7893 3.46957 20 4 20h7v-2H4V8l8 5 8-5v6h2V6c0-.53043-.2107-1.03914-.5858-1.41421C21.0391 4.21071 20.5304 4 20 4zm-8 7L4 6h16l-8 5z"/></svg>
+						</button>
+					<div class="c-form__footer">
+						<input type="checkbox" required>
+						<p>Todos los datos aportados por el usuario en este formulario NO tendrán persistencia en ninguna base de datos ni en ningún otro sistema de persistencia.</p>
+					</div>
+				{{ form_end(contactForm) }}
+					</div>
+				</form>
+			</div>
+		</section>
+    {% endblock %}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Joseba Querejeta | Desarrollador Web</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Joseba Querejeta ⌨ Desarrollador Web | 📧 josebaquerejetaweb@gmail.com | ☎ +34 65 930 0948 | twitter: @joqueweb">	
+
+		<meta property="og:title" content="Joseba Querejeta | Desarrollador Web">
+		<meta property="og:description" content="Joseba Querejeta | Desarrollador Web | 📧 josebaquerejetaweb@gmail.com | ☎ +34 65 930 0948 | twitter: @joqueweb">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="josebaquerejeta.com">
+		<meta property="og:image" content="https://josebaquerejeta.com/img/ogp.jpg">
+
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@joqueweb">
+		<meta name="twitter:description" content="Joseba Querejeta ⌨ Desarrollador Web | 📧 josebaquerejetaweb@gmail.com | ☎ +34 65 930 0948 | twitter: @joqueweb">
+		<meta name="twitter:image:src" content="https://josebaquerejeta.com/img/twitter-img.jpg">
+
+		<link rel="manifest" href="site.webmanifest">
+		<link rel="apple-touch-icon" href="icon.png">
+    {% block stylesheets %}
+		<link rel="stylesheet" href="{{ asset('css/main-v.0.2.css') }}">
+    {% endblock %}
+
+		<meta name="theme-color" content="#fafafa">
+	</head>
+  <body>
+    {% block body %} 
+		<header>
+			<section class="section-home">
+				<div class="triangle-box">
+					<div class="triangle-border">▲</div>
+					<div class="triangle-border-02">▼</div>
+				</div>
+				<div class="content-box">
+					<h1 class="heading-primary mt-4">Joseba Querejeta</h1>
+					<p class="heading-primary--sub mt-1">Desarrollador Web</p>
+					<div class="button mt-5">
+						<a class="button__link" href="#portafolio" title="Ir al Portafolio">Portafolio</a>
+						<a class="button__link" href="docs/curriculum_vitae_joseba_querejeta.pdf" title="descargar C.V." download="curriculum vitae Joseba Querejeta" target="blanc">Descargar C.V.</a>
+					</div>
+					<ul class="contact-info mt-4">
+						<li class="contact-info__item">contacto@josebaquerejeta.com</li>
+						<li class="contact-info__item"><span class="telf">📱+34 65 930 0948</span></li>
+						<li class="contact-info__item"><a href="https://twitter.com/joqweb" class="contact-info__link" target="blank">@joqweb</a></li>
+					</ul>
+				</div>
+				<div class="triangle-box">
+					<div class="triangle-border-bottom">&#9650;</div>
+					<div class="triangle-border-bottom-02">&#9650;</div>
+				</div>
+			</section>
+		</header>
+		<main>
+      {% block content %} {% endblock %}
+		</main>
+		<footer class="section-footer">
+			<div class="footer-info">
+				<p class="footer-info__rights">&#169; 2020 Joseba Querejeta - Algunos derechos reservados.</p>
+				<p class="footer-info__copyright">Web Desarrollada por <a href="https://www.josebaquerejeta.com" target="blank">Joseba Querejeta</a></p>
+			</div>
+		</footer>
+    {% block javascripts %} 
+		<script src="{{ asset('js/vendor/modernizr-3.11.2.min.js') }}"></script>
+		<script src="{{ asset('js/vendor/modernizr-custom.js') }}"></script>
+		<script src="{{ asset('js/main.js') }}"></script>
+   {% endblock %}
+  {% endblock %}
+	</body>
+
+</html>

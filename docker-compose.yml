@@ -1,0 +1,35 @@
+version: "3.5"
+
+services:
+  db:
+    image: mysql:8.0.29
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - "your-volume:/var/lib/mysql"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    ports:
+      - "0:0"
+    networks:
+      - your-network
+  php:
+    container_name: web-josebaquerejeta
+    build:
+      context: ./.docker
+      args:
+        TIMEZONE: ${TIMEZONE}
+        UID: $U_ID
+    volumes:
+      - ./:.
+    ports:
+      - "0:0"
+    networks:
+      - your-network
+volumes:
+  your-volume:
+networks:
+    your-network:
+

@@ -1,0 +1,29 @@
+    <container>
+        <row class="header">
+            <columns>
+                <a href="{{ url('web_index') }}">
+                    <img src="{{ absolute_url(asset('web/assets/img/lourdes_elorza_foto_de_perfil.jpg')) }}" class="logo" alt="SpaceBar Logo">
+                </a>
+            </columns>
+        </row>
+
+        {% block content %}
+        {% endblock %}
+
+        <row class="footer">
+            <columns>
+                <p>Cheers,</p>
+                <p>Your friendly <em>Space Bar Team</em></p>
+            </columns>
+        </row>
+        <row class="bottom">
+            <columns>
+                <center>
+                    <spacer size="20"></spacer>
+                    <div>
+                        Sent with ❤️ from the friendly folks at The Space Bar
+                    </div>
+                </center>
+            </columns>
+        </row>
+    </container>
