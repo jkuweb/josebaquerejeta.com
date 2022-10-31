@@ -171,10 +171,14 @@
 					<p>{{ message }}</p>
 					</div>
 				{% endfor %}
+				{% for message in app.flashes('email-error-notice') %}
+					<div class="email-error-notice">
+					<p>{{ message }}</p>
+					</div>
+				{% endfor %}
 			<div class="c-contact__container">
 				<p class="c-contact__text"></p>
-				<form action="{{ path('web_inicio') }}" class="c-contact__form c-form" method="POST">
-				{{ form_start(contactForm) }}
+				{{ form_start(contactForm, {'attr' : {'id': 'contactForm', 'class': 'c-contact__form c-form'}}) }}
 					<div class="c-form__header">
 						<p>Envíame un mensaje</p>
 						<p>(Todos los campos son requeridos)</p>
@@ -197,7 +201,7 @@
 					<div class="c-form__col-2">
 						<label class="c-form__label" for="message">Tu Mensaje</label>
 								{{ form_row(contactForm.message) }}
-						<button class="c-form__btn c-btn" type="submit">
+						<button class="c-form__btn c-btn g-recaptcha" type="submit" data-sitekey="6LfgXWgiAAAAAFqncZAaTMnOST7xCbQKj3aQyn7Q" data-callback='onSubmit' data-action='submit'>
 							Enviar
 							<svg class="c-form__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 17h4v-3l5 4.5-5 4.5v-3h-4v-3zm7-13H4c-.53043 0-1.03914.21071-1.41421.58579C2.21071 4.96086 2 5.46957 2 6v12c0 .5304.21071 1.0391.58579 1.4142C2.96086 19.7893 3.46957 20 4 20h7v-2H4V8l8 5 8-5v6h2V6c0-.53043-.2107-1.03914-.5858-1.41421C21.0391 4.21071 20.5304 4 20 4zm-8 7L4 6h16l-8 5z"/></svg>
 						</button>
@@ -207,7 +211,38 @@
 					</div>
 				{{ form_end(contactForm) }}
 					</div>
-				</form>
 			</div>
 		</section>
     {% endblock %}
+	    {% block javascript %}
+		{{ parent() }}
+       <script>
+		let form = document.getElementById('contactForm');
+		let name = document.getElementById('contact_form_name');
+		let email = document.getElementById('contact_form_email');
+		let message = document.getElementById('contact_form_message'); 
+		let subject = document.getElementById('contact_form_subject'); 
+
+		function onSubmit(token) {
+          form.submit();
+        }
+
+    // Function that loads recaptcha on form input focus
+    function reCaptchaOnFocus() {
+      var head = document.getElementsByTagName('head')[0]
+      var script = document.createElement('script')
+      script.type = 'text/javascript';
+      script.src = 'https://www.google.com/recaptcha/api.js'
+      head.appendChild(script);
+
+      // remove focus to avoid js error:
+      name.removeEventListener('focus', reCaptchaOnFocus)
+      email.removeEventListener('focus', reCaptchaOnFocus)
+    };
+    // add initial event listener to the form inputs
+    name.addEventListener('focus', reCaptchaOnFocus, false);
+    email.addEventListener('focus', reCaptchaOnFocus, false);
+
+     </script>
+    {% endblock %}
+

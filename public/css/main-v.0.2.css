@@ -1479,8 +1479,14 @@ img {
 
 /* FLASH MESSAGES */
 .email-success-notice {
-  height: 7rem;
   background: #00ff7054;
+}
+.email-error-notice {
+  background: #ff000054;
+}
+.email-success-notice,
+.email-error-notice {
+  height: 7rem;
   font-size: 1.2rem;
   font-family: "RobotoCondensed Regular", "sans-serif";
   text-align: center;
