@@ -32,6 +32,7 @@ class HomePageController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $token = ($request->request->get('g-recaptcha-response'));
+            $this->validateCaptchaToken->__invoke($token); 
             if(!$token) {
                 $this->addFlash('email-error-notice', '¡Ha ocurrido un error!');
                 return $this->redirect($httpReferer);
@@ -48,7 +49,6 @@ class HomePageController extends AbstractController
             $reciver = $message->getEmail();
             $template = TwigTemplate::NOTIFICATION_TO_USER_CONTACT_EMAIL_RECEIVED;
 
-            $this->validateCaptchaToken->__invoke($token); 
 
             $mailer->send($reciver, $template, $payload);
             $this->addFlash('email-success-notice', '¡Email recibido!');
