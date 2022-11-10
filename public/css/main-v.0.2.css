@@ -1127,7 +1127,7 @@ img {
   margin-top: 4rem;
   font-style: italic;
 }
-.c-form__footer > input {
+.c-form__footer > label {
   margin-right: 0.4rem;
 }
 @media only screen and (min-width: 56.25rem) {
